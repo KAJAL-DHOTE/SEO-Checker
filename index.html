@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Review Tool</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">SEO Checker</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Pages -->
+
+  <section id="home" class="section">
+
+    <div class="container">
+
+      <h1 class="title">Website Review & SEO Checker</h1>
+      <h1 class="title2">+ Comprehensive Toolset</h1>
+
+      <form id="seo-form" class="form-card">
+        <input type="text" id="url-input" placeholder="Enter website URL" required><br>
+        <button type="submit" id="check-btn">Analyze</button>
+
+        <p>Analyze your website and optimize for better performance.</p>
+
+      </form>
+
+      <div id="loading" class="loading">Analyzing...</div>
+      <div id="error" class="error"></div>
+
+      <div id="results" class="results">
+        <h2>Analysis Results</h2>
+        <ul id="results-list">
+          <!-- Results will be dynamically added here -->
+        </ul><br><br>
+      </div>
+    </div>
+
+  </section>
+  <section>
+    <div class="br"></div>
+    <br><br><br><br><br>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <h3>SEO Analysis</h3>
+        <p>Get detailed insights into your website's SEO performance.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Page Speed</h3>
+        <p>Analyze and improve page loading times.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Keyword Tracking</h3>
+        <p>Monitor your top-performing keywords in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>SEO Checker is your go-to tool for improving website visibility and performance.
+      <br>
+      Generate more leads straight from your website with your own Embedded SEO Audit Tool. Simply embed a simple Audit
+      Form that matches your website’s styling and colors.
+    </p>
+
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div id="box">
+    <div id="cursor">
+      <h5>Play</h5>
+  </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="title3">
+          <h2><span>Perfect for Small Business Owners, Digital Agencies</span></h2>
+          <p class="dark">..SEO Experts, Web Designers or anyone that needs to improve a website!</p><br><br><br>
+
+          <div class="row1">
+            <!-- <div class="col2">
+              <i class="fa-solid fa-check" style="font-size: 1.3em;"></i>
+            </div> -->
+            <div class="col-dark">
+              <i class="fa-solid fa-check" style="font-size: 1.3em;"></i>
+              <b> Save Time</b> – Some agencies spend hundreds of hours of manual work performing Website Audits which
+              can be automated in a matter of seconds.
+            </div><br>
+          </div>
+          <div class="row1 ">
+            <!-- <div class="col2">
+              <i class="fa-solid fa-check" style="font-size: 1.3em;"></i>
+            </div> -->
+            <div class="col-dark">
+              <i class="fa-solid fa-check" style="font-size: 1.3em;"></i>
+              <b>Present Beautiful Reports</b> – Wow your clients and prospects with impressive bespoke reports that
+              look like they were made by hand.
+            </div><br>
+          </div>
+          <div class="row1">
+            <!-- <div class="col2">
+              <i class="fa-solid fa-check" style="font-size: 1.3em;"></i>  
+            </div> -->
+            <div class="col-dark">
+              <i class="fa-solid fa-check" style="font-size: 1.3em;"></i>
+              <b>Win More Customers</b> – Turn your site into a lead magnet. Use White Label PDF Reports and the
+              Embeddable Audit Tool to acquire more customers straight from your website.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top">↑</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+  integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
